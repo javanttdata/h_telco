@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<groups xmlns="http://www.isdc.ro/wro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+   <group name="addons_responsive">
+      <js>/_ui/addons/assistedservicecustomerinterestsaddon/responsive/common/js/assistedservicecustomerinterestsaddon.js</js>
+      <css>/_ui/addons/assistedservicecustomerinterestsaddon/responsive/common/css/assistedservicecustomerinterestsaddon.css</css>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/urlsearchparamspolyfill.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/assistedservicestorefront.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/jquery.tablesorter.pager.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/jquery.tablesorter.min.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/Chart.min.js</js>
+      <js>/_ui/addons/assistedservicestorefront/responsive/common/js/asm.storefinder.js</js>
+      <css>/_ui/addons/assistedservicestorefront/responsive/common/css/assistedservicestorefront.css</css>
+      <css>/_ui/addons/assistedservicestorefront/responsive/common/css/storeFinder.css</css>
+      <css>/_ui/addons/assistedservicestorefront/responsive/common/css/customer360.css</css>
+      <js>/_ui/addons/customerticketingaddon/responsive/common/js/customerticketingaddon.js</js>
+      <css>/_ui/addons/customerticketingaddon/responsive/common/css/customerticketingaddon.css</css>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.producttocarttabs.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.detailPagePopup.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.cart.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.autocomplete.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.paymentdetails.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.paymentInfo.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.checkremovepaymentinfo.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.guidedSelling.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.checkout.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.telco.pickupinstore.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.telco.storefinder.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.ratingstars.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.minicart.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.productlistviews.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.homepagemenu.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.b2ctelcocheckoutcartdetails.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.deliverymodedescription.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.hopdebug.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.removepaymentdetails.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.silentorderpost.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.updatebillingaddress.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.checkoutaddress.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.configureGuidedSelling.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/subscriptionstorefront.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.processtypes.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.productoffers.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.modaldialog.js</js>
+      <js>/_ui/addons/b2ctelcoaddon/responsive/common/js/acc.carousel.js</js>
+      <js>/_ui/addons/smarteditaddon/shared/common/js/webApplicationInjector.js</js>
+      <js>/_ui/addons/smarteditaddon/shared/common/js/reprocessPage.js</js>
+      <js>/_ui/addons/smarteditaddon/shared/common/js/adjustComponentRenderingToSE.js</js>
+      <js>/_ui/addons/smarteditaddon/responsive/common/js/smarteditaddon.js</js>
+      <css>/_ui/addons/smarteditaddon/responsive/common/css/smarteditaddon.css</css>
+   </group>
+</groups>
+

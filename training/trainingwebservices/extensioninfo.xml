@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
+--><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
+           
+    
+    <extension abstractclassprefix="Generated" classprefix="Trainingwebservices" managername="TrainingwebservicesManager" managersuperclass="de.hybris.platform.jalo.extension.Extension" name="trainingwebservices" usemaven="false">
+                               
+      
+        
+        <requires-extension name="webservicescommons"/>
+                         
+       
+      
+        
+        <coremodule generated="true" manager="org.hybris.training.jalo.TrainingwebservicesManager" packageroot="org.hybris.training"/>
+                      
+        
+        <webmodule jspcompile="false" webroot="/trainingwebservices"/>
+                					
+		
+        
+        	
+
+   
+    
+    </extension>
+              
+
+
+</extensioninfo>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+
+    <collectiontypes>
+        <collectiontype code="GenderList" elementtype="Gender" autocreate="true" generate="true" type="list"/>
+        <collectiontype code="SwatchColorSet" elementtype="SwatchColorEnum" autocreate="true" generate="true"
+                        type="set"/>
+    </collectiontypes>
+
+    <enumtypes>
+        <enumtype generate="true" code="SwatchColorEnum" autocreate="true" dynamic="true">
+            <value code="BLACK"/>
+            <value code="BLUE"/>
+            <value code="BROWN"/>
+            <value code="GREEN"/>
+            <value code="GREY"/>
+            <value code="ORANGE"/>
+            <value code="PINK"/>
+            <value code="PURPLE"/>
+            <value code="RED"/>
+            <value code="SILVER"/>
+            <value code="WHITE"/>
+            <value code="YELLOW"/>
+        </enumtype>
+    </enumtypes>
+
+    <itemtypes>
+
+        <!-- Add your item definitions here -->
+
+
+        <!-- TypeGroups are for structure of this file only -->
+
+        <typegroup name="Apparel">
+            <itemtype code="ApparelProduct" extends="Product"
+                      autocreate="true" generate="true"
+                      jaloclass="de.hybris.training.core.jalo.ApparelProduct">
+                <description>Base apparel product extension that contains additional attributes.</description>
+                <attributes>
+                    <attribute qualifier="genders" type="GenderList">
+                        <description>List of genders that the ApparelProduct is designed for</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+            </itemtype>
+
+            <itemtype code="ApparelStyleVariantProduct" extends="VariantProduct"
+                      autocreate="true" generate="true"
+                      jaloclass="de.hybris.training.core.jalo.ApparelStyleVariantProduct">
+                <description>Apparel style variant type that contains additional attribute describing variant style.
+                </description>
+                <attributes>
+                    <attribute qualifier="style" type="localized:java.lang.String"
+                               metatype="VariantAttributeDescriptor">
+                        <description>Color/Pattern of the product.</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+
+                    <attribute qualifier="swatchColors" type="SwatchColorSet">
+                        <description>A normalized color mapping to a standardized front-end navigable name.
+                        </description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+
+            </itemtype>
+
+            <itemtype code="ApparelSizeVariantProduct" extends="ApparelStyleVariantProduct"
+                      autocreate="true" generate="true"
+                      jaloclass="de.hybris.training.core.jalo.ApparelSizeVariantProduct">
+                <description>Apparel size variant type that contains additional attribute describing variant size.
+                </description>
+                <attributes>
+                    <attribute qualifier="size" type="localized:java.lang.String"
+                               metatype="VariantAttributeDescriptor">
+                        <description>Size of the product.</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+            </itemtype>
+        </typegroup>
+
+    <typegroup name = "Address">
+        <itemtype code="DefaultAddress">
+            <description>Address info</description>
+            <deployment table="DefaultAddress" typecode="12698"/>
+
+            <attributes>
+
+                <attribute qualifier="apartment" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="billingAddress" type="java.lang.String">
+                    <description>Billing address number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="building" type="java.lang.String">
+                    <description>Building number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="companyName" type="java.lang.String">
+                    <description>Company name.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="complement" type="java.lang.String">
+                    <description>Complement for address.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="country" type="Country">
+                    <description>Country information.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="defaultAddress" type="java.lang.Boolean">
+                    <defaultvalue>true</defaultvalue>
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="district" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="email" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="firstName" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="lastName" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="formattedAddress" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="id" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="installationAddress" type="java.lang.Boolean">
+                    <defaultvalue>true</defaultvalue>
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="line1" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="line2" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="postalCode" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="referencePoint" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="region" type="Region">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="riskArea" type="java.lang.Boolean">
+                    <defaultvalue>false</defaultvalue>
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="shippingAddress" type="java.lang.Boolean">
+                    <defaultvalue>true</defaultvalue>
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="town" type="java.lang.String">
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+                <attribute qualifier="visibleInAddressBook" type="java.lang.Boolean">
+                    <defaultvalue>true</defaultvalue>
+                    <description>Apartment number.</description>
+                    <persistence type="property" />
+                </attribute>
+
+            </attributes>
+
+        </itemtype>
+    </typegroup>
+
+
+        <typegroup name="Customer"> <!--Custom HYBRIS-->
+
+            <itemtype code="Currency" autocreate="false" generate="false">
+                <description>Currency info</description>
+
+                <attributes>
+
+                    <attribute qualifier="currencyname" type="java.lang.String">
+                        <description>Currency name (EX dollar).</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                </attributes>
+
+            </itemtype>
+
+            <itemtype code="Language" autocreate="false" generate="false">
+                <description>Language info</description>
+
+                <attributes>
+
+                    <attribute qualifier="nativename" type="java.lang.String">
+                        <description>Native name.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                </attributes>
+
+            </itemtype>
+
+            <itemtype code="Region" autocreate="false" generate="false">
+                <description>Region info</description>
+
+                <attributes>
+
+                    <attribute qualifier="countryiso" type="java.lang.String">
+                        <description>Region name.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="role" type="java.lang.String">
+                        <description>Role.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                </attributes>
+
+            </itemtype>
+
+            <!--Customer Complements-->
+
+            <itemtype code="Customer" autocreate="false" generate="false">
+                <description>Customer info</description>
+
+                <attributes>
+
+                    <attribute qualifier="address" type="Address">
+                        <modifiers optional="false" initial="true"/>
+                        <description>User address.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="language" type="Language">
+                        <description>User's language info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="currency" type="Currency">
+                        <description>User's currency info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="defaultAddress" type="DefaultAddress">
+                        <description>Apartment number.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="smsNotifications" type="java.lang.Boolean">
+                        <modifiers optional="false" initial="true"/>
+                        <description>SMS notification preferences.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="displayuid" type="java.lang.String">
+                        <description>UID preferences.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="whatsappNotifications" type="java.lang.Boolean">
+                        <modifiers optional="false" initial="true"/>
+                        <description>Whatsapp notification preferences.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="cpf" type="java.lang.String">
+                        <description>CPF info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="mobilephone" type="java.lang.String">
+                        <description>Mobile phone info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="mothersName" type="java.lang.String">
+                        <description>User's mother's name.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="nickname" type="java.lang.String">
+                        <description>User's nickname.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="titleCode" type="java.lang.String">
+                        <description>User's title code.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="rg" type="java.lang.String">
+                        <description>User's RG.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="passport" type="java.lang.String">
+                        <description>User's passport info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="birthdate" type="java.lang.String">
+                        <description>User's passport info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="firstName" type="java.lang.String">
+                        <description>User's passport info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="lastName" type="java.lang.String">
+                        <description>User's passport info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="country" type="Country">
+                        <description>User's country info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="region" type="Region">
+                        <description>User's country info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                </attributes>
+
+            </itemtype>
+
+            <itemtype code="Address" autocreate="false" generate="false">
+                <description>Address info</description>
+                <attributes>
+
+                    <attribute qualifier="apartment" type="java.lang.String">
+                        <description>Company name.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="companyName" type="java.lang.String">
+                        <description>Company name.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="complement" type="java.lang.String">
+                        <description>Address complement.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="defaultAddress" type="java.lang.Boolean">
+                        <modifiers optional="false" initial="true"/>
+                        <description>Default address (y/n).</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="phone" type="java.lang.String">
+                        <description>Phone info.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="referencePoint" type="java.lang.String">
+                        <description>Reference point for address.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="riskArea" type="java.lang.Boolean">
+                        <modifiers optional="false" initial="true"/>
+                        <description>Risk area (y/n).</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="titleCode" type="java.lang.String">
+                        <description>Title code.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                    <attribute qualifier="formattedAddress" type="java.lang.String">
+                        <description>Title code.</description>
+                        <persistence type="property" />
+                    </attribute>
+
+                </attributes>
+
+            </itemtype>
+
+        </typegroup>
+
+
+
+        <typegroup name="Electronics">
+            <itemtype code="ElectronicsColorVariantProduct" extends="VariantProduct"
+                      autocreate="true" generate="true"
+                      jaloclass="de.hybris.training.core.jalo.ElectronicsColorVariantProduct">
+                <description>Electronics color variant type that contains additional attribute describing variant color.
+                </description>
+                <attributes>
+                    <attribute qualifier="color" type="localized:java.lang.String"
+                               metatype="VariantAttributeDescriptor">
+                        <description>Color of the product.</description>
+                        <modifiers/>
+                        <persistence type="property"/>
+                    </attribute>
+                </attributes>
+            </itemtype>
+        </typegroup>
+
+    </itemtypes>
+</items>
