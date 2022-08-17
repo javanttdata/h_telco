@@ -546,7 +546,7 @@
 			<property name="modelService" ref="modelService"/>
 	</bean>
 
-	<!--Customer Service Bean -->
-	<bean id="CustomerServices" class="de.hybris.training.core.service.CustomerServices"/>
+	<!--Customer Services Bean -->
+	<bean id="customerServices" class="de.hybris.training.core.service.CustomerServices"/>
 
 </beans>

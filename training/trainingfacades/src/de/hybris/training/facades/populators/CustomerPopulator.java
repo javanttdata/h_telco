@@ -30,7 +30,7 @@ public class CustomerPopulator  implements Populator<CustomerModel, CustomerData
         target.setEmail(source.getContactEmail());
         target.setDeactivationDate(String.valueOf(source.getDeactivationDate()));
         target.setIdentifications(target.getIdentifications());
-        //target.setTitle(String.valueOf(source.getTitle()));
+//        target.setTitle(String.valueOf(source.getTitle()));
         target.setTitleCode(source.getTitleCode());
 
         target.setBirthdate(source.getBirthdate());

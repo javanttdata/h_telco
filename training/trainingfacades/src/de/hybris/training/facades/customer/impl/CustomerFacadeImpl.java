@@ -22,7 +22,14 @@ public class CustomerFacadeImpl implements CustomerFacade {
         return Converters.convertAll(customerModels, getCustomerConverter());
     }
 
+    @Override
+    public void updateCustomerFacade(CustomerModel customerModel) {
+        customerServices.updateCustomerService(customerModel);
+
+    }
+
     public CustomerServices getCustomerServices(){
+
         return customerServices;
     }
 

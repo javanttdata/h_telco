@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface CustomerTrainingDao extends Dao {
     List<CustomerModel> getCustomerByCode(String customerId);
+
+    void updateCustomerDao(CustomerModel customerModel);
 }

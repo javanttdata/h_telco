@@ -27,4 +27,14 @@ public class CustomerDaoImpl extends AbstractItemDao implements CustomerTraining
         final SearchResult<CustomerModel> customer= getFlexibleSearchService().search(CUSTOMER_QUERY,params);
         return customer.getResult()==null ? Collections.emptyList(): customer.getResult();
     }
+
+    @Override
+    public void updateCustomerDao(CustomerModel customerModel){
+
+        CustomerModel customerModelUpdate = getCustomerByCode(customerModel.getCustomerID()).get(0);
+
+        customerModelUpdate.setName(customerModel.getName());
+
+        getModelService().save(customerModelUpdate);
+    }
 }

@@ -20,5 +20,8 @@ public class CustomerServices {
     }
 
 
-
+    public void updateCustomerService(CustomerModel customerModel)
+        {
+            customerTrainingDao.updateCustomerDao(customerModel);
+        }
 }

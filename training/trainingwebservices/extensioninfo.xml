@@ -9,6 +9,8 @@
       
         
         <requires-extension name="webservicescommons"/>
+
+        <requires-extension name="trainingfacades"/>
                          
        
       

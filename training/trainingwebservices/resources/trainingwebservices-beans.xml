@@ -125,6 +125,56 @@
 		<property name="integerMap" type="java.util.Map&lt;String,Integer>"/>
 	</bean>
 
+<!-- CUSTOMER WSDTO -->
+
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.Customer.CustomerDataWSDTO">
+		<property name="mobilephone" type="java.lang.String"/>
+		<property name="mothersName" type="java.lang.String"/>
+		<property name="birthdate" type="java.lang.String"/>
+		<property name="cpf" type="java.lang.String"/>
+		<property name="rg" type="java.lang.String"/>
+		<property name="name" type="java.lang.String"/>
+		<property name="nickname" type="java.lang.String"/>
+		<property name="smsNotifications" type="java.lang.Boolean"/>
+		<property name="whatsappNotifications" type="java.lang.Boolean"/>
+		<property name="telephone1" type="java.lang.String"/>
+		<property name="telephone2" type="java.lang.String"/>
+		<property name="titleCode" type="java.lang.String"/>
+		<property name="uid" type="java.lang.String"/>
+		<property name="id" type="java.lang.String"/>
+		<property name="passport" type="java.lang.String"/>
+		<property name="customerId" type="java.lang.String"/>
+		<property name="deactivationDate" type="java.lang.String"/>
+		<property name="email" type="java.lang.String"/>
+		<property name="firstName" type="java.lang.String"/>
+		<property name="lastName" type="java.lang.String"/>
+		<property name="formatedAddress" type="java.lang.String"/>
+		<property name="installationAddress" type="java.lang.Boolean"/>
+		<property name="line1" type="java.lang.String"/>
+		<property name="line2" type="java.lang.String"/>
+		<property name="phone" type="java.lang.String"/>
+		<property name="password" type="java.lang.String"/>
+		<property name="displayUid" type="java.lang.Boolean"/>
+		<property name="defaultAddress" type="de.hybris.platform.commercefacades.DefaultAddress.data.DefaultAddressData"/>
+		<property name="language" type="de.hybris.platform.commercefacades.Language.data.LanguageData"/>
+		<property name="country" type="de.hybris.platform.commercefacades.Country.data.CountryData"/>
+		<property name="region" type="de.hybris.platform.commercefacades.Region.data.RegionData"/>
+		<property name="currency" type="de.hybris.platform.commercefacades.Currency.data.CurrencyData"/>
+		<property name="address" type="de.hybris.platform.commercefacades.address.data.AddressData"/>
+		<property name="identifications" type="de.hybris.platform.commercefacades.Identifications.data.IdentificationsData"/>
+	</bean>
+
+	<bean class="de.hybris.platform.commercewebservicescommons.dto.Customer.CustomerDataListWSDTO">
+		<property name="customer" type="java.util.List &lt;de.hybris.platform.commercewebservicescommons.dto.Customer.CustomerDataWSDTO>"/>
+	</bean>
+
+<!--	<bean class="org.anchor.queues.data.CustomerDataList">-->
+<!--		<property name="customer" type="java.util.List &lt;de.hybris.platform.commercefacades.Customer.data.CustomerData>"/>-->
+<!--	</bean>-->
+
+	<bean class="org.anchor.queues.data.CustomerDataList">
+		<property name="customer" type="java.util.List &lt;de.hybris.platform.commercefacades.user.data.CustomerData>"/>
+	</bean>
 
 
 </beans>

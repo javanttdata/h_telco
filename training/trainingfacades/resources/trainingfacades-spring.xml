@@ -183,8 +183,8 @@
 
 	<bean id="genderData" class="de.hybris.training.facades.product.data.GenderData" scope="prototype"/>
 
-	<alias name="customerFacade" alias="customerFacade"/>
-	<bean id="customerFacade" class="de.hybris.training.facades.customer.impl">
+	<alias name="customerTrainingFacade" alias="customerTrainingFacade"/>
+	<bean id="customerTrainingFacade" class="de.hybris.training.facades.customer.impl.CustomerFacadeImpl">
 		<property name="customerServices" ref="customerServices"/>
 		<property name="customerConverter" ref="customerConverter"/>
 	</bean>
